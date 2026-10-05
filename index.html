@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChildrenPath | Live School Transport Monitoring</title>
+  <meta name="description" content="ChildrenPath connects families, drivers, and schools in Lima with live GPS monitoring, smart alerts, and safe school transportation.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <i class="fa-solid fa-bus-simple"></i>
+        </div>
+        <span>ChildrenPath</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html#home" class="active" data-i18n="nav.home">Home</a>
+        <a href="index.html#benefits" data-i18n="nav.benefits">Benefits</a>
+        <a href="index.html#plans" data-i18n="nav.plans">Plans</a>
+        <a href="about.html" data-i18n="nav.about">About Us</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- i18n Language Selector -->
+        <div class="lang-selector-wrapper">
+          <i class="fa-solid fa-globe lang-icon"></i>
+          <select class="lang-select" aria-label="Language selector">
+            <option value="en" data-i18n="lang.en">EN</option>
+            <option value="es" data-i18n="lang.es">ES</option>
+          </select>
+        </div>
+
+        <!-- Login Button -->
+        <a href="#" class="btn-login-header" data-i18n="nav.login">Log In</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-badge" data-i18n="hero.badge">LIVE MONITORING & TRACKING TECHNOLOGY</span>
+          <h1 class="hero-title" data-i18n="hero.title">Track your child from the moment they step onto the bus until they arrive home.</h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">ChildrenPath connects families, drivers, and schools with live monitoring, smart alerts, and safe transportation for every ride.</p>
+          
+          <div class="hero-buttons">
+            <a href="contact.html" class="btn btn-primary" data-i18n="hero.btn.demo">Request a demo</a>
+            <a href="#plans" class="btn btn-outline" data-i18n="hero.btn.plans">View plans</a>
+          </div>
+
+          <div class="hero-pills">
+            <span class="pill-tag" data-i18n="hero.pill.gps">GPS Tracking</span>
+            <span class="pill-tag" data-i18n="hero.pill.alerts">Arrival alerts</span>
+            <span class="pill-tag" data-i18n="hero.pill.assistance">Digital assistance</span>
+          </div>
+        </div>
+
+        <!-- Live Route Card Mockup Widget -->
+        <div class="hero-widget">
+          <div class="hero-widget-header">
+            <h3 class="widget-route-title" data-i18n="hero.card.route">Route: San Andrés School</h3>
+            <span class="widget-status-badge">14:10 · Live</span>
+          </div>
+          <div class="widget-driver-info">
+            <div class="driver-avatar">C</div>
+            <div class="driver-details">
+              <p class="driver-name" data-i18n="hero.card.driver">Driver: Juan Pérez (Lic: A-IIa)</p>
+              <p>Vehicle: Van Mercedes-Benz · ABC-123</p>
+            </div>
+          </div>
+          <div class="widget-alerts">
+            <h4 class="widget-alerts-title" data-i18n="hero.card.alertsTitle">Ride Alerts</h4>
+            <div class="widget-alert-list">
+              <div class="widget-alert-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span data-i18n="hero.card.alert1">Vehicle departure at 14:05</span>
+              </div>
+              <div class="widget-alert-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span data-i18n="hero.card.alert2">Arrival in 5 min at your stop</span>
+              </div>
+              <div class="widget-alert-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span data-i18n="hero.card.alert3">Student arrival sign-off: Verified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="stats.title">Trust in every journey</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" data-i18n="stats.stat1.num">24/7</div>
+            <p class="stat-desc" data-i18n="stats.stat1.desc">Continuous monitoring and real-time support</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-i18n="stats.stat2.num">100%</div>
+            <p class="stat-desc" data-i18n="stats.stat2.desc">Route tracking and attendance/arrival alerts</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-i18n="stats.stat3.num">Lima</div>
+            <p class="stat-desc" data-i18n="stats.stat3.desc">Designed for families, drivers, and schools in Lima</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-i18n="stats.stat4.num">+500</div>
+            <p class="stat-desc" data-i18n="stats.stat4.desc">Families and drivers connected to ChildrenPath</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="benefits.title">Benefits for every stakeholder</h2>
+        <div class="benefits-grid">
+          <!-- Families -->
+          <div class="benefit-card">
+            <h3 data-i18n="benefits.families.title">Families</h3>
+            <p data-i18n="benefits.families.desc">Receive live notifications, real-time location, and fast assistance.</p>
+            <ul class="benefit-bullets">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="benefits.families.b1">Live route tracking</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="benefits.families.b2">Instant arrival alerts</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="benefits.families.b3">Direct digital assistance</span></li>
+            </ul>
+          </div>
+          <!-- Drivers -->
+          <div class="benefit-card">
+            <h3 data-i18n="benefits.drivers.title">Drivers</h3>
+            <p data-i18n="benefits.drivers.desc">Receive helpful alerts, report incidents, and maintain safer routes step by step.</p>
+            <ul class="benefit-bullets">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="benefits.drivers.b1">Assigned student roster</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="benefits.drivers.b2">Attendance logging</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="benefits.drivers.b3">Incident reporting</span></li>
+            </ul>
+          </div>
+          <!-- Companies / Schools -->
+          <div class="benefit-card">
+            <h3 data-i18n="benefits.companies.title">Companies & Schools</h3>
+            <p data-i18n="benefits.companies.desc">Centralize routes, monitor compliance, and deliver clear reports to schools and families.</p>
+            <ul class="benefit-bullets">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="benefits.companies.b1">Full fleet visibility</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="benefits.companies.b2">Time & route control</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="benefits.companies.b3">Punctuality reports</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="how.title">How ChildrenPath Works</h2>
+        <div class="how-grid">
+          <div class="how-card">
+            <h3 data-i18n="how.c1.title">Alerts</h3>
+            <p data-i18n="how.c1.desc">Receive immediate notifications of departure, arrival, and stops along the student's route.</p>
+            <ul class="benefit-bullets">
+              <li><i class="fa-solid fa-check"></i> Departure notifications</li>
+              <li><i class="fa-solid fa-check"></i> Near-stop alerts</li>
+              <li><i class="fa-solid fa-check"></i> Arrival confirmation</li>
+            </ul>
+          </div>
+          <div class="how-card">
+            <h3 data-i18n="how.c2.title">Digital Assistance</h3>
+            <p data-i18n="how.c2.desc">Connect with our team for any unforeseen events during the commute.</p>
+            <ul class="benefit-bullets">
+              <li><i class="fa-solid fa-check"></i> Direct support channel</li>
+              <li><i class="fa-solid fa-check"></i> Emergency protocols</li>
+              <li><i class="fa-solid fa-check"></i> Incident coordination</li>
+            </ul>
+          </div>
+          <div class="how-card">
+            <h3 data-i18n="how.c3.title">Safe Routes</h3>
+            <p data-i18n="how.c3.desc">Smart map tracking to ensure every single trip is safe.</p>
+            <ul class="benefit-bullets">
+              <li><i class="fa-solid fa-check"></i> Active route display</li>
+              <li><i class="fa-solid fa-check"></i> ETA predictions</li>
+              <li><i class="fa-solid fa-check"></i> Optimized stops</li>
+            </ul>
+          </div>
+          <div class="how-card">
+            <h3 data-i18n="how.c4.title">Fleet Monitoring</h3>
+            <p data-i18n="how.c4.desc">Centralized control tool tailored for transport companies and schools.</p>
+            <ul class="benefit-bullets">
+              <li><i class="fa-solid fa-check"></i> Multi-vehicle map</li>
+              <li><i class="fa-solid fa-check"></i> Driver status logs</li>
+              <li><i class="fa-solid fa-check"></i> Safety compliance</li>
+            </ul>
+          </div>
+          <div class="how-card">
+            <h3 data-i18n="how.c5.title">Integration</h3>
+            <p data-i18n="how.c5.desc">Easy to use and adaptable to any school transport fleet size.</p>
+            <ul class="benefit-bullets">
+              <li><i class="fa-solid fa-check"></i> Quick driver setup</li>
+              <li><i class="fa-solid fa-check"></i> Simple parent app</li>
+              <li><i class="fa-solid fa-check"></i> Institutional onboarding</li>
+            </ul>
+          </div>
+          <div class="how-card">
+            <h3 data-i18n="how.c6.title">Privacy</h3>
+            <p data-i18n="how.c6.desc">Strict data protection for student personal information and trips.</p>
+            <ul class="benefit-bullets">
+              <li><i class="fa-solid fa-check"></i> Encryption standard</li>
+              <li><i class="fa-solid fa-check"></i> Authorized access</li>
+              <li><i class="fa-solid fa-check"></i> Legal compliance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="plans.title">Plans for every need</h2>
+        <div class="plans-grid">
+          <!-- Independent Driver -->
+          <div class="plan-card">
+            <div>
+              <h3 class="plan-title" data-i18n="plans.p1.title">Independent Driver</h3>
+              <p class="plan-desc" data-i18n="plans.p1.desc">For private drivers or small school transport vehicles.</p>
+              <ul class="benefit-bullets plan-bullets">
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.p1.b1">Live tracking</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.p1.b2">Pickup & arrival alerts</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.p1.b3">Direct support</span></li>
+              </ul>
+            </div>
+            <div>
+              <div class="plan-price-box" data-i18n="plans.p1.price">$ 15 / mo</div>
+              <a href="contact.html" class="btn btn-primary" style="width: 100%;" data-i18n="plans.btn.select">Get Started</a>
+            </div>
+          </div>
+
+          <!-- Company -->
+          <div class="plan-card">
+            <div>
+              <h3 class="plan-title" data-i18n="plans.p2.title">Company</h3>
+              <p class="plan-desc" data-i18n="plans.p2.desc">For school transport fleets requiring centralized management.</p>
+              <ul class="benefit-bullets plan-bullets">
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.p2.b1">Fleet monitoring</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.p2.b2">Report management</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.p2.b3">Incident reporting</span></li>
+              </ul>
+            </div>
+            <div>
+              <div class="plan-price-box" data-i18n="plans.p2.price">$ 59 / mo</div>
+              <a href="contact.html" class="btn btn-primary" style="width: 100%;" data-i18n="plans.btn.select">Get Started</a>
+            </div>
+          </div>
+
+          <!-- School (Highlighted) -->
+          <div class="plan-card highlight">
+            <div>
+              <h3 class="plan-title" data-i18n="plans.p3.title">School</h3>
+              <p class="plan-desc" data-i18n="plans.p3.desc">Full institutional license for schools and educational centers.</p>
+              <ul class="benefit-bullets plan-bullets">
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.p3.b1">Full school dashboard</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.p3.b2">Family app integration</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="plans.p3.b3">Dedicated 24/7 support</span></li>
+              </ul>
+            </div>
+            <div>
+              <div class="plan-price-box" data-i18n="plans.p3.price">$ 119 / mo</div>
+              <a href="contact.html" class="btn btn-white" style="width: 100%;" data-i18n="plans.btn.request">Request Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="testimonials.title">What our users say</h2>
+        <div class="testimonials-grid">
+          <!-- T1 -->
+          <div class="testimonial-card">
+            <p class="testimonial-quote" data-i18n="testimonials.t1">"ChildrenPath gives us peace of mind knowing exactly what time the school bus arrives. They notify us at every stop."</p>
+            <div class="testimonial-user">
+              <div class="user-avatar">M</div>
+              <div>
+                <h4 class="user-name" data-i18n="testimonials.u1">María Torres · Parent</h4>
+              </div>
+            </div>
+          </div>
+          <!-- T2 -->
+          <div class="testimonial-card">
+            <p class="testimonial-quote" data-i18n="testimonials.t2">"As a driver, it helps me organize students and notify parents if there are any delays without getting distracted."</p>
+            <div class="testimonial-user">
+              <div class="user-avatar">J</div>
+              <div>
+                <h4 class="user-name" data-i18n="testimonials.u2">Juan Ruiz · Independent Driver</h4>
+              </div>
+            </div>
+          </div>
+          <!-- T3 -->
+          <div class="testimonial-card">
+            <p class="testimonial-quote" data-i18n="testimonials.t3">"With the platform we have improved communication with parents and optimized our route scheduling."</p>
+            <div class="testimonial-user">
+              <div class="user-avatar">S</div>
+              <div>
+                <h4 class="user-name" data-i18n="testimonials.u3">Sofía Gómez · Colegios Unidos</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="faq.title">Frequently Asked Questions</h2>
+        <div class="faq-box">
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.q1">Does ChildrenPath work in Lima and surrounding areas?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+                <p data-i18n="faq.a1">Yes, our service operates across metropolitan Lima and neighboring districts with full GPS coverage.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.q2">Can I integrate ChildrenPath with my existing fleet?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+                <p data-i18n="faq.a2">Yes, our mobile app works on any standard Android/iOS device without requiring expensive custom hardware.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.q3">Can families view the bus location in real time?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+                <p data-i18n="faq.a3">Yes, authorized family members receive active live map access during scheduled pickup and drop-off shifts.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.q4">Do you offer support for drivers and administrators?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="faq-answer">
+                <p data-i18n="faq.a4">We provide 24/7 technical assistance and user onboarding for drivers, administrators, and parents.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="container">
+      <div class="cta-banner">
+        <div>
+          <h2 data-i18n="cta.title">Need a custom demo for your fleet or school?</h2>
+          <p data-i18n="cta.desc">Tell us how ChildrenPath can help you improve safety and communication in your school transportation.</p>
+          <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn-white" data-i18n="hero.btn.demo">Request a demo</a>
+            <a href="contact.html" class="btn btn-white-outline" data-i18n="cta.btn.contact">Contact Sales</a>
+          </div>
+        </div>
+        <div class="cta-contact-box">
+          <h4 data-i18n="cta.contact">Contact Us</h4>
+          <div class="contact-detail-item">
+            <i class="fa-solid fa-phone"></i>
+            <span data-i18n="cta.phone">Phone: +51 984 231 995</span>
+          </div>
+          <div class="contact-detail-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span data-i18n="cta.email">Email: hola@childrenpath.com</span>
+          </div>
+          <div class="contact-detail-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span data-i18n="cta.whatsapp">WhatsApp: +51 999 123 456</span>
+          </div>
+          <div class="contact-detail-item">
+            <i class="fa-solid fa-clock"></i>
+            <span data-i18n="cta.hours">Lima · Peru | Mon-Fri · 09:00 to 18:00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon">
+              <i class="fa-solid fa-bus-simple"></i>
+            </div>
+            <span>ChildrenPath</span>
+          </a>
+          <p data-i18n="footer.tagline">School transport monitoring and safety platform in Lima.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.platform">Platform</h4>
+          <ul>
+            <li><a href="index.html#plans" data-i18n="nav.plans">Plans</a></li>
+            <li><a href="#" data-i18n="footer.security">Security</a></li>
+            <li><a href="index.html#benefits" data-i18n="footer.testimonials">Testimonials</a></li>
+            <li><a href="#" data-i18n="footer.faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.company">Company</h4>
+          <ul>
+            <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+            <li><a href="terms.html" data-i18n="footer.terms">Terms & Conditions</a></li>
+            <li><a href="terms.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">Copyright © ChildrenPath - 2026</p>
+        <div class="social-icons">
+          <a href="#" class="social-circle" aria-label="Facebook">F</a>
+          <a href="#" class="social-circle" aria-label="Instagram">I</a>
+          <a href="#" class="social-circle" aria-label="LinkedIn">L</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
