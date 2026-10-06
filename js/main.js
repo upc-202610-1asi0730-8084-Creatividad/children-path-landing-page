@@ -39,12 +39,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Login Button Handler
-  // Por ahora no dirige a ninguna parte, se colocara el link de la AW despues 
   const loginBtns = document.querySelectorAll(".btn-login, .btn-login-header");
   loginBtns.forEach((btn) => {
     btn.addEventListener("click", (e) => {
       const href = btn.getAttribute("href");
-      // Colocar link reemplazando a #
       if (!href || href === "#") {
         e.preventDefault();
       }
