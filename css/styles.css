@@ -1353,3 +1353,28 @@ textarea.form-control {
     text-align: center;
   }
 }
+/* Mejora la visibilidad del foco para navegacion por teclado */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #0056b3;
+  outline-offset: 3px;
+}
+
+/* Respeta la preferencia si el usuario reduce animaciones */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Suavizado de tipografias y renderizado optimo */
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
